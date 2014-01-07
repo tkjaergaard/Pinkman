@@ -104,3 +104,11 @@ bot.addListener("pm", function(nick, message) {
 bot.addListener('raw', function(message){
     // console.log(message);
 });
+
+// Constructive command to flip them tables!
+bot.addListener('message', function(from, to, message) {
+   if (message.indexOf('!tableflip') > -1)
+   {
+       bot.say(to, '(╯°□°)╯︵ ┻━┻');
+   }
+});
