@@ -102,15 +102,13 @@ bot.addListener('raw', function (message) {
   // console.log(message);
 });
 
-// Constructive command to flip them tables!
+// Public commands
 bot.addListener('message', function (from, to, message) {
   if (message === '!tableflip') {
     bot.say(to, '(╯°□°)╯︵ ┻━┻');
   }
-});
-
-bot.addListener('message', function(from, to, message) {
-   if (message === '!puttableback') {
-       bot.say(to, '┬─┬﻿ ノ( ゜-゜ノ)');
-   }
+  else if( message === '!puttableback' )
+  {
+    bot.say(to, '┬─┬ ノ( ゜-゜ノ)');
+  }
 });
