@@ -108,3 +108,9 @@ bot.addListener('message', function (from, to, message) {
     bot.say(to, '(╯°□°)╯︵ ┻━┻');
   }
 });
+
+bot.addListener('message', function(from, to, message) {
+   if (message === '!puttableback') {
+       bot.say(to, '┬─┬﻿ ノ( ゜-゜ノ)');
+   }
+});
