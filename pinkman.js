@@ -107,8 +107,15 @@ bot.addListener('message', function (from, to, message) {
   if (message === '!tableflip') {
     bot.say(to, '(╯°□°)╯︵ ┻━┻');
   }
-  else if( message === '!puttableback' )
+  else if(message === '!puttableback')
   {
     bot.say(to, '┬─┬ ノ( ゜-゜ノ)');
+  }
+  else if(message === '!dice')
+  {
+    var number = Math.floor(Math.random() * 6) + 1;
+    
+    bot.send('NOTICE', to,  'is rolling dice..');
+    bot.send('NOTICE', to, 'looking at the dice and '+from+' rolled a '+number);
   }
 });
