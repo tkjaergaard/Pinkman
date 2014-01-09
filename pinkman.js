@@ -104,6 +104,7 @@ bot.addListener('raw', function (message) {
 
 // Public commands
 bot.addListener('message', function (from, to, message) {
+  
   if (message === '!tableflip') {
     bot.say(to, '(╯°□°)╯︵ ┻━┻');
   }
@@ -118,4 +119,24 @@ bot.addListener('message', function (from, to, message) {
     bot.send('NOTICE', to,  'is rolling dice..');
     bot.send('NOTICE', to, 'looking at the dice and '+from+' rolled a '+number);
   }
+  else if( message === '!quote' )
+  {
+    var says = [
+      'Like I came to you, begging to cook meth. \'Oh, hey, nerdiest old dude I know, you wanna come cook crystal?\' Please. I\'d ask my diaper-wearing granny, but her wheelchair wouldn\'t fit in the RV.',
+      'You know what? Why I\'m here in the first place? Is to sell you meth. You\'re nothing to me but customers! I made you my bitch. You okay with that?',
+      'Are we in the meth business, or the money business?',
+      'What if this is like math, or algebra? And you add a plus douchebag to a minus douchebag, and you get, like, zero douchebags?',
+      'Hey, you girls want to meet my fat stack?',
+      'I got two dudes that turned into raspberry slushie then flushed down my toilet. I can\'t even take a proper dump in there. I mean, the whole damn house has got to be haunted by now.',
+      'What good is being an outlaw when you have responsibilities?',
+      'I\'M A BLOWFISH! BLOWFISH! YEEEAAAH! BLOWFISHIN\' THIS UP!',
+      'Yeah, bitch! Magnets!',
+      'Yo 148, 3-to-the-3-to-the-6-to-the-9. Representin\' the ABQ. What up, biatch? Leave it at the tone!'
+    ];
+
+    var msg = says[ Math.floor( Math.random() * says.length) + 0];
+
+    bot.send('NOTICE', to,  msg);
+  }
+  
 });
