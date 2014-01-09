@@ -28,6 +28,13 @@ Pinkman runs on meth and NodeJS.
   
 For the best result, we're recommending that you use it with the package [Forever](https://npmjs.org/package/forever).
 
+## Public commands
+
+* `!tableflip` - Flip that table.
+* `!puttableback` - Put that table back.
+* `!dice` - Roll the dice.
+* `!quote` - Throw a Pinkman quote, bitch!
+
 ## Constribution
 
 We welcome all improvements you got for Pinkman. The philosophy is though that is should be dead simple.
