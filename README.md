@@ -46,3 +46,4 @@ http://twitter.com/t_kjaergaard
 ## Constributors
 
 * [ThomasBS](https://github.com/ThomasBS) - !tableflip cmd
+* [AndreasStokholm](https://github.com/AndreasStokholm) - !puttableback cmd
