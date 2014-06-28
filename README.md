@@ -46,21 +46,22 @@ For the best result, we're recommending that you use it with the package [Foreve
 * `!quote` - Throw a Pinkman quote, bitch!
 
 ## Admin commands
-* `voice.......:` voice <user> <channel> <password>
-* `devoice.....:` devoice <user> <channel> <password>
-* `op..........:` op <user> <channel> <password>
-* `deop........:` deop <user> <channel> <password>
-* `say.........:` say <channel|user> [<text>] <password>
-* `notice......:` notice <channel> [<text>] <password>
-* `kick........:` kick <channel> <user> [<text>] <password>
-* `invite......:` invite <user> <channel> <password>
-* `ban.........:` ban <channel> <user> <password>
-* `deban.......:` deban <channel> <user> [<text>] <password>
-* `join........:` join <channel> <password>
-* `leave.......:` leave <channel> <password>
-* `topic.......:` topic <channel> [<topic>] <password>
-* `nick........:` nick <nick> <password>
-* `identify....:` identify <password>
+
+    voice.......: voice <user> <channel> <password>
+    devoice.....: devoice <user> <channel> <password>
+    op..........: op <user> <channel> <password>
+    deop........: deop <user> <channel> <password>
+    say.........: say <channel|user> [<text>] <password>
+    notice......: notice <channel> [<text>] <password>
+    kick........: kick <channel> <user> [<text>] <password>
+    invite......: invite <user> <channel> <password>
+    ban.........: ban <channel> <user> <password>
+    deban.......: deban <channel> <user> [<text>] <password>
+    join........: join <channel> <password>
+    leave.......: leave <channel> <password>
+    topic.......: topic <channel> [<topic>] <password>
+    nick........: nick <nick> <password>
+    identify....: identify <password>
 
 ## Constribution
 
