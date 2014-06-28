@@ -1,12 +1,25 @@
-var config = {
-    channels: ['#hackaton.dk'], // Channels to connect to on launch
-    server: 'irc.freenode.net', // Server to connect to
-    botName: 'foobot', // The nick of the bot
-    password: '1234', // Password to interact with the bot
-    identifyPass: '' // Identify password for nickserv
-  },
-  irc = require('irc');
+var fs = require('fs'),
+    irc = require('irc'),
+    config;
 
+/**
+ * Load config file
+ * from the file system.
+ */
+try {
+  var configData = fs.readFileSync(__dirname + '/config.json', {encoding: 'utf8'});
+  config = JSON.parse(configData);
+}
+catch (err)
+{
+  console.error('Error: Can not read config file "' + __dirname + '/config.json"\n\n' + err);
+  process.exit(1);
+}
+
+/**
+ * Create bot instance
+ * @type irc
+ */
 var bot = new irc.Client(config.server, config.botName, {
   channels: config.channels
 });
