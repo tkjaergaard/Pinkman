@@ -146,7 +146,13 @@ bot.addListener('message', function (from, to, message) {
       'What good is being an outlaw when you have responsibilities?',
       'I\'M A BLOWFISH! BLOWFISH! YEEEAAAH! BLOWFISHIN\' THIS UP!',
       'Yeah, bitch! Magnets!',
-      'Yo 148, 3-to-the-3-to-the-6-to-the-9. Representin\' the ABQ. What up, biatch? Leave it at the tone!'
+      'Yo 148, 3-to-the-3-to-the-6-to-the-9. Representin\' the ABQ. What up, biatch? Leave it at the tone!',
+      'Bitch!',
+      'Nah, come on man. Some straight like you, giant stick up his ass at like what, sixty, he\'s just gonna break bad?',
+      'Look, I like making cherry product, but let\'s keep it real, alright? We make poison for people who don\'t care. We probably have the most unpicky customers in the world.',
+      'You don’t need a criminal lawyer. You need a criminal lawyer',
+      'Possum. Big, freaky, lookin\' bitch. Since when did they change it to opossum? When I was comin\' up it was just possum. Opossum makes it sound like he\'s irish or something. Why do they gotta go changing everything?',
+      'I uh… I eat a lot of frozen stuff… It\'s usually pretty bad, I mean the pictures are always so awesome, you know? It\'s like “hell yeah, I\'m starved for this lasagna!” and then you nuke it and the cheese gets all scabby on top and it\'s like… it\'s like you\'re eating a scab… I mean, seriously, what\'s that about? It\'s like “Yo! What ever happened to truth in advertising?” You know?'
     ];
 
     var msg = says[ Math.floor( Math.random() * says.length) + 0];
